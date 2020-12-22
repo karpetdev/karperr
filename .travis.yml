@@ -1,2 +1,7 @@
+# basic
 language: java
-jdk: openjdk11
+jdk: openjdk13
+# safelist
+branches:
+  only:
+    - main
