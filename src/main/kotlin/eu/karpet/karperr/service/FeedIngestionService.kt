@@ -1,12 +1,9 @@
 package eu.karpet.karperr.service
 
 import eu.karpet.karperr.service.external.ExternalClient
+import org.springframework.stereotype.Service
 
-class FeedIngestionService {
+@Service
+class FeedIngestionService(val externalClient: ExternalClient) {
 
-    val ExternalClient externalClient
-
-    fun getContent(): String {
-        return "index"
-    }
 }

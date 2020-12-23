@@ -22,16 +22,14 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-webflux")
+	implementation("org.springframework.boot:spring-boot-starter-webflux:2.4.1")
+	implementation("org.springframework.boot:spring-boot-starter-data-cassandra:2.4.1")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 	implementation("io.github.microutils:kotlin-logging-jvm:2.0.2")
-	implementation("com.datastax.oss:java-driver-core:4.9.0")
-	implementation("com.datastax.oss:java-driver-query-builder:4.9.0")
-	implementation("com.datastax.oss:java-driver-mapper-runtime:4.9.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
 	testImplementation("junit:junit:4.13.1")
